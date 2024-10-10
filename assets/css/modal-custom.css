@@ -1,0 +1,29 @@
+.jquery-modal{
+    z-index: 15;
+    background-color: #1f51e890;    
+}
+.modal{
+    box-shadow: none;
+}
+.modal a.close-modal{
+    top: 8.5px;
+    right: 10.5px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/close.svg');
+}
+.modal-content-title{
+    margin-bottom: 10px;
+}
+.modal-content-container{
+    padding: 14px 16px;
+}
+.modal-btns-footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+}
+.modal-content-section{
+    display: none;
+}

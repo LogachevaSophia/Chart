@@ -1,0 +1,29 @@
+/* workspace css */
+.workspace-section .tabs-triggers-container{
+    padding: 20px 0px 0px 50px;
+}
+.workspace-section .tabs-content-block{
+    background-color: #FEFEFE;
+    padding: 16px 20px;
+    min-height: 500px;
+}
+/* workspace css */
+
+/*  */
+.add-person-block-input:not(:last-of-type){
+    margin-bottom: 8px;
+}
+.add-person-block-input .placeholder-text{
+    margin-bottom: 4px;
+}
+.add-person-block-input .selector-container{
+    display: flex;
+    align-items: center;
+}
+.add-person-block-input .selector-container .btnRemoveAddPersonBlock{
+    margin-left: 8px;
+}
+.add-person-btn{
+    margin-top: 10px;
+}
+/*  */

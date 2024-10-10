@@ -1,0 +1,69 @@
+/* tabs css */
+.tabs-triggers-container{
+    background-color: #1F50E8;
+}
+.tabs-triggers-container .container{
+    display: flex;
+    /* overflow-x: auto; */
+    position: relative;
+}
+.tabs-triggers-list{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+.tabs-triggers-list-item,
+.notTabTrigger{
+    color: #FFF;
+    font-size: 12px;
+    cursor: pointer;
+}
+.tabs-triggers-list-item .tabs-triggers-title,
+.notTabTrigger .tabs-triggers-title{
+    padding: 10px 20px;
+    /* max-width: 250px; */
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+.tabs-triggers-list-item.active .tabs-triggers-title{
+    color: #000;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #FFFFFF;
+}
+.tabs-triggers-list-item-container{
+    /* position: relative; */
+}
+.tabs-triggers-list-item.active .tabs-triggers-list-item-container::after,
+.tabs-triggers-list-item.active .tabs-triggers-list-item-container::before{
+    position: absolute;
+    content: ' ';
+    width: 10px;
+    height: 100%;
+    top: 0px;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #1F50E8;
+}
+.tabs-triggers-list-item.active .tabs-triggers-list-item-container::after{
+    left: -7px;
+}
+.tabs-triggers-list-item.active .tabs-triggers-list-item-container::before{
+    right: -7px;
+}
+.tabs-content-block{
+    display: none;
+}
+.tabs-content-block.active{
+    display: block;
+}
+.tabs-triggers-list-item-container .widjet-popup-position-under{
+    top: 44px;
+}
+.tabs-input-name{
+    display: none;
+}
+.tabs-input-name.active{
+    display: block;
+}
+/* tabs css */

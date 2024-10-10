@@ -1,0 +1,239 @@
+/* common css */
+/*** scrollbar ***/
+/* ::scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-ie-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-moz-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::scrollbar-thumb {
+	border-color: #393f4e;
+	background-color: #393f4e;
+	border-radius: 7px;
+}
+
+::-ie-scrollbar-thumb {
+	border-color: #393f4e;
+	background-color: #393f4e;
+	border-radius: 7px;
+}
+
+::-moz-scrollbar-thumb {
+	border-color: #393f4e;
+	background-color: #393f4e;
+	border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-color: #393f4e;
+	background-color: #393f4e;
+	border-radius: 7px;
+}
+
+::scrollbar-track {
+	width: 2px !important;
+	border-width: 2px !important;
+	background: #eee;
+}
+
+::-ie-scrollbar-track {
+	width: 2px !important;
+	border-width: 2px !important;
+	background: #eee;
+}
+
+::-moz-scrollbar-track {
+	width: 2px !important;
+	border-width: 2px !important;
+	background: #eee;
+}
+
+::-webkit-scrollbar-track {
+	width: 2px !important;
+	border-width: 2px !important;
+	background: #eee;
+} */
+/*** scrollbar ***/
+
+body{
+    min-height: 100vh;
+    transition: .3s;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content{
+    flex: 1 0 auto;
+    overflow: hidden;
+}
+footer{
+    flex: 0 0 auto;
+}
+.container{
+    max-width: 1550px;
+    width: 100%;
+    margin: 0 auto;
+}
+.title-primary{
+    font-size: 24px;
+    font-weight: 700;
+}
+.btn{
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+.btn-primary{
+    color: #FFF;
+    background: #0D4CD3;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active{
+    background: #0B40B3;
+}
+.btn-outline-primary{
+    color: #0D4CD3;
+    border: 2px solid #0D4CD3;
+    background: #FFF;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary.active{
+    border: 2px solid #0B40B3;
+}
+.btn-with-icon{
+    display: flex;
+    align-items: center;
+}
+.btn-with-icon img{
+    min-width: 18px;
+    height: 18px;
+    margin-right: 3px;
+}
+.btn-icon-small{
+    min-width: 24px;
+    height: 24px;
+    padding: 0;
+}
+.background-color-primary{
+    background-color: #0D4CD3;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.position-relative{
+    position: relative;
+}
+.placeholder-text{
+    color: #413F62;
+    font-size: 14px;
+    font-weight: 700;
+}
+.input-without-any-styles{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+}
+.changeable-input{
+    display: none;
+    max-width: 250px;
+}
+.changeable-title.active{
+    display: none;
+}
+.changeable-input.active{
+    display: block;
+}
+
+.inputBlock input{
+    border: none;
+    outline: none;
+    color: #413F62;
+    font-size: 14px;;
+    padding: 14px 16px;
+    border-radius: 4px;
+    background-color: #F5F7FA;
+}
+
+.checkboxInput {
+    position: relative;
+}
+.checkboxInput input[type=checkbox] {
+    display: block;
+    width: 1px !important;
+    height: 1px !important;
+    position: absolute;
+    left: 4px;
+    top: 13px;
+    z-index: 0;
+    border: none;
+    outline: none;
+    opacity: 0;
+}
+.checkboxInput input.valid+label+label:before {
+    background: url("../img/checkboxChecked.svg") 0 0 no-repeat;
+    background-position: center;
+}
+.checkboxInput label:not(.error),
+.radioInput label:not(.error) {
+    padding-left: 36px;
+    font-size: 16px;
+    line-height: 150%;
+    position: relative;
+}
+.checkboxInput label:not(.error):not(.error):before {
+    z-index: 2;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0px;
+    top: -4px;
+    background: url("../img/checkbox.svg") 0 0 no-repeat;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.checkboxInput label:not(.error):hover:before {
+    -webkit-filter: brightness(105%);
+    filter: brightness(105%);
+}
+
+.checkboxInput input[type=checkbox]:checked+label:before{
+    background: url("../img/checkboxChecked.svg") 0 0 no-repeat;
+}
+
+.checkboxInput input[type=checkbox]:disabled+label:before{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/* common css */

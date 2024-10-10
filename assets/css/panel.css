@@ -1,0 +1,18 @@
+/* panel css */
+.panel-section{
+    display: flex;
+    align-items: center;
+    padding: 14px 22px;
+}
+.panel-title{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.panel-btns{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+/* panel css */

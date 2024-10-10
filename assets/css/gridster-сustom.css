@@ -1,0 +1,10 @@
+.gridster{
+    overflow: hidden;
+    /* max-width: 100vw; */
+}
+.gridster ul{
+    list-style-type: none;
+    
+}
+
+.gridster > ul{min-height:500px;}

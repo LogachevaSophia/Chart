@@ -1,0 +1,11 @@
+.footer {
+    padding: 1rem;
+    background-color: #1F50E8;
+}
+.footer .copyright {
+    color: #ffffff;
+    font-size: 12px;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    text-align: center;
+}

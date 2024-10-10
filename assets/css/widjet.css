@@ -1,0 +1,318 @@
+/* widjets css */
+.widjet-list-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 14px;
+}
+
+.widjet-list-item {
+  position: relative;
+  /* overflow: auto; */
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 24px 48px 0px rgba(230, 235, 245, 0.4),
+    0px 1px 4px 0px #e3ebfc;
+  margin-bottom: -6px;
+}
+
+.widjet-list-item-content {
+  /* overflow: auto; */
+  height: 100%;
+  width: 100%;
+  padding: 30px 25px 25px;
+}
+
+.widjet-list-item-content__viewBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.widjet-list-item.half-item {
+  flex: 0 0 48.5%;
+}
+
+.widjet-list-item.full-item {
+  flex: 0 0 100%;
+}
+
+.widjet-list-item-content__title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.widjet-popup-position-under {
+  top: 32px;
+}
+
+.widjet-popup-position-right-zero {
+  top: 32px;
+  left: initial;
+  right: 0px;
+}
+
+.popup.widjet-popup-position-under.popup_filter {
+  height: 560px;
+  overflow: auto;
+  top: 0px;
+  width: 690px;
+  z-index: 999;
+}
+
+.popup.widjet-popup-position-under.popup_filter .container {
+  margin-bottom: 15px;
+}
+
+.popup.widjet-popup-position-under.popup_filter .container>span {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+
+.popup.widjet-popup-position-under.popup_filter .container_checkbox {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  position: relative;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  top: 6px;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  outline: 2px solid #0b76ef;
+  border: 2px solid #fff;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+
+.popup_addNewGraph .tabcontent button,
+.popup_filter button {
+  background: #0B40B3;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer
+}
+
+
+.popup_addNewGraph .tabcontent button {
+  background: #0B40B3;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer
+}
+
+.popup_addNewGraph {
+  width: 909px;
+  left: -909px;
+}
+
+
+.popup_addNewGraph .containetlabel,
+.change_filters .containetlabel {
+  display: flex;
+  flex-direction: row;
+  transition: unset;
+}
+
+.popup_addNewGraph .containetlabel>input,
+.change_filters .containetlabel>input {
+  /* display: none; */
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  /* min-width: 100%; */
+  /* width: 60%; */
+}
+
+.popup_addNewGraph .containetlabel>input.active {
+  display: unset;
+
+}
+
+.popup_addNewGraph .containetlabel>h2 {
+  display: unset;
+  width: 60%;
+}
+
+.popup_addNewGraph .containetlabel>h2.active {
+  display: none;
+}
+
+
+.popup_addNewGraph .tab,
+.popup_filter .tab {
+  float: left;
+  /* border: 1px solid #ccc; */
+  /* background-color: #f1f1f1; */
+  width: 40%;
+  height: 100%;
+}
+
+.popup_addNewGraph .tab button,
+.popup_filter .tab .tabsButton {
+  display: block;
+  background-color: #E4ECFD;
+  color: #3D4657;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 12px;
+
+}
+
+.popup_addNewGraph .tab button:hover,
+.popup_filter .tab .tabsButton:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.popup_addNewGraph .tab button.active,
+.popup_filter .tab .tabsButton.active {
+  background-color: #F0F5FF;
+}
+
+.popup_addNewGraph .tabcontent,
+.popup_filter .tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 60%;
+  border-left: none;
+  height: 100%;
+}
+
+.popup_addNewGraph .tabcontent select,
+.popup_filter select {
+  BACKGROUND-COLOR: #F0F5FF;
+  PADDING: 12PX;
+  BORDER-RADIUS: 12PX;
+  BORDER: NONE;
+}
+
+.popup_addNewGraph .ReportSelect,
+.popup_filter .ReportSelect {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.popup_filter .ReportSelect > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.popup_addNewGraph .changeContentStatus,
+.popup_filter .changeContentStatus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.popup_filter .tab .tabsButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup_filter .tab .deletePreset,
+.change_filters .addNewPreset {
+  background: transparent;
+  color: black;
+}
+
+.popup_filter .tab .tablinks {
+  background: transparent;
+  color: black;
+  font-size: 14px;
+  white-space: initial;
+  max-width: 80%;
+}
+
+.change_filters .tablinks {
+  padding: unset;
+}
+
+.change_filters .changeContentStatus .attrInput >input{
+  width:100px;
+
+.popup_addNewGraph .saveDashb{
+  margin-top: 20px;
+}
+
+/* widjet css */
